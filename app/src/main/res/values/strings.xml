@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GithubRepositoryApp</string>
+
+    <string name="txt_login">Login with GitHub</string>
+    <string name="txt_authorization">Authorization</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_repositories">Repositories</string>
+    <string name="txt_search_repositories">Search repositories</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_stars">stars</string>
+    <string name="txt_forks">forks</string>
+    <string name="txt_issues">issues</string>
+    <string name="txt_loading">Loading...</string>
+    <string name="txt_no_result">No result</string>
+
+    <string name="account_type" translatable="false">com.github</string>
+
+</resources>

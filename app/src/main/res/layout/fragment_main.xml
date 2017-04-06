@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <com.githubrepositoryapp.view.CustomToolbar style="@style/ToolBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_centerHorizontal="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text=""
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_below="@+id/imageAvatar"/>
+
+        <Button
+            android:id="@+id/btnRepositories"
+            android:layout_above="@+id/btnSearch"
+            android:text="@string/txt_repositories"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_above="@+id/btnLogout"
+            android:text="@string/txt_search_repositories"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_alignParentBottom="true"
+            android:text="@string/txt_logout"
+            style="@style/ButtonStyle"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
